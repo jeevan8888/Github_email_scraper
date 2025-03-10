@@ -1,0 +1,39 @@
+{
+  "name": "github-email-scraper",
+  "version": "1.0.0",
+  "description": "A tool to scrape GitHub repositories for JavaScript developer email addresses",
+  "main": "index.js",
+  "bin": {
+    "github-email-scraper": "./cli.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "cli": "node cli.js",
+    "test": "node test.js",
+    "example": "node example.js",
+    "cookies": "node get-upwork-cookies.js",
+    "puppeteer": "node puppeteer-scraper.js",
+    "postinstall": "chmod +x cli.js"
+  },
+  "keywords": [
+    "github",
+    "scraper",
+    "email",
+    "javascript",
+    "developers"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^20.1.2",
+    "axios": "^1.8.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "puppeteer": "^22.15.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
